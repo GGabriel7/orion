@@ -4,6 +4,7 @@
 <link rel="shortcut icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
 <meta charset="UTF-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script type="text/javascript" src="speedtest.js"></script>
 <script type="text/javascript">
 function I(i){return document.getElementById(i);}
@@ -217,6 +218,8 @@ function getIPFromIpify(){
 		border:none; padding:0; margin:0;
 		background:#FFFFFF;
 		color:#202020;
+		font-family: "Poppins", sans-serif;
+    	font-weight: 500;
 	}
 	body{
 		text-align:center;
@@ -224,7 +227,9 @@ function getIPFromIpify(){
 	}
 	h1{
 		color:#404040;
+		
 	}
+
 	#loading{
 		background-color:#FFFFFF;
 		color:#404040;
@@ -433,11 +438,11 @@ function getIPFromIpify(){
 		}
 	}
 </style>
-<title>LibreSpeed</title>
+<title>Orion Test</title>
 </head>
 <body onload="initServers()">
-<h1>LibreSpeed</h1>
-<div id="loading" class="visible">
+<h1 style="display: none;">Orion Test</h1>
+<div id="loading" class="visible" >
 	<p id="message"><span class="loadCircle"></span>Selecting a server...</p>
 </div>
 <div id="testWrapper" class="hidden">
@@ -447,7 +452,7 @@ function getIPFromIpify(){
 		Server: <select id="server" onchange="s.setSelectedServer(SPEEDTEST_SERVERS[this.value])"></select>
 	</div>
 	<div id="test">
-		<div class="testGroup">
+		<div class="testGroup" style="display: none;">
             <div class="testArea2">
 				<div class="testName">Ping</div>
 				<div id="pingText" class="meterText" style="color:#AA6060"></div>

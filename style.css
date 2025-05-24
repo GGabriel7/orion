@@ -135,16 +135,23 @@ i {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-family: Arial, sans-serif;
 }
 
 .whatsapp-toggle {
   background-color: #25D366;
   color: white;
   border-radius: 50%;
-  padding: 12px 15px;
+  padding: 30px 30px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.3s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
 }
 
 .whatsapp-toggle:hover {
@@ -155,17 +162,30 @@ i {
   display: none;
   flex-direction: column;
   margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 8px 0;
+  min-width: 150px;
+}
+
+.whatsapp-menu.active .whatsapp-options {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .whatsapp-options a {
-  background-color: white;
   color: #333;
   text-decoration: none;
-  padding: 8px 12px;
-  margin-bottom: 5px;
+  padding: 8px 16px;
+  margin: 4px 12px;
   border-radius: 20px;
   font-size: 14px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -176,25 +196,75 @@ i {
   background-color: #f1f1f1;
 }
 
-.whatsapp-menu:hover .whatsapp-options {
-  display: flex;
+.icon-close {
+  display: none;
+}
+
+.whatsapp-menu.active .icon-close {
+  display: inline;
 }
 
 .notification-badge {
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-color: red;
-    color: white;
-    font-size: 11px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    box-shadow: 0 0 0 2px white;
-    z-index: 100;
-  }
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-color: red;
+  color: white;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 0 0 2px white;
+  z-index: 100;
+}
   
+/* TESTE DE VOLOCIDADE */
+
+#teste-velocidade {
+  height: 100vh; /* 100% da altura da tela */
+  padding: 0 !important; /* remove espaçamentos */
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#teste-velocidade .container {
+  height: 100vh;
+  max-width: 100vw; /* para não limitar a largura */
+  padding: 0 0rem; /* um padding pequeno, opcional */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#teste-velocidade .row {
+  flex: 1; /* para ocupar o máximo possível */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#teste-velocidade .col-lg-10 {
+  height: 100%;
+  max-width: 100%;
+}
+
+#teste-velocidade .ratio {
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* sombra leve */
+  border-radius: 0.5rem;
+}
+
+#teste-velocidade iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
