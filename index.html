@@ -9,10 +9,12 @@
   <!-- Link para Font Awesome (CDN) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="imagens/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  
 
   <header class="hero position-relative">
     <!-- NAVBAR -->
@@ -44,32 +46,63 @@
     </nav>
   
     <!-- CARROSSEL -->
-    <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imagens/imagem4.jpg"" class="d-block w-100 hero-image" alt="Banner 1">
-        </div>
-        <div class="carousel-item">
-          <img src="imagens/imagem4.jpg"" class="d-block w-100 hero-image" alt="Banner 2">
-        </div>
-        <div class="carousel-item">
-          <img src="imagens/imagem4.jpg" class="d-block w-100 hero-image" alt="Banner 3">
-        </div>
-      </div>
+<div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <picture>
+        <!-- Imagem para celular -->
+        <source 
+          media="(max-width: 375px)" 
+          srcset="imagens/orionHorizontal.png">
+        <!-- Imagem padrão -->
+        <img 
+          src="imagens/orionVertical.png"
+          class="d-block w-100 hero-image"
+          alt="Banner 1">
+      </picture>
     </div>
-    
+
+    <div class="carousel-item">
+      <picture>
+        <!-- Imagem para celular -->
+        <source 
+          media="(max-width: 375px)" 
+          srcset="imagens/orionHorizontal.png">
+        <!-- Imagem padrão -->
+        <img 
+          src="imagens/orionVertical.png"
+          class="d-block w-100 hero-image"
+          alt="Banner 2">
+      </picture>
+    </div>
+
+    <div class="carousel-item">
+      <picture>
+        <!-- Imagem para celular -->
+        <source 
+          media="(max-width: 375px)" 
+          srcset="imagens/orionHorizontal.png">
+        <!-- Imagem padrão -->
+        <img 
+          src="imagens/orionVertical.png"
+          class="d-block w-100 hero-image"
+          alt="Banner 3">
+      </picture>
+    </div>
+  </div>
+</div>
     <!-- MINIATURAS -->
     <div class="carousel-thumbnails container text-center mt-3">
-      <img src="imagens/imagem4.jpg"" data-bs-target="#carouselHero" data-bs-slide-to="0" class="thumbnail active" alt="Miniatura 1">
-      <img src="imagens/imagem4.jpg"" data-bs-target="#carouselHero" data-bs-slide-to="1" class="thumbnail" alt="Miniatura 2">
-      <img src="imagens/imagem4.jpg"" data-bs-target="#carouselHero" data-bs-slide-to="2" class="thumbnail" alt="Miniatura 3">
+      <img src="imagens/orionVertical.png" data-bs-target="#carouselHero" data-bs-slide-to="0" class="thumbnail active" alt="Miniatura 1">
+      <img src="imagens/orionVertical.png" data-bs-target="#carouselHero" data-bs-slide-to="1" class="thumbnail" alt="Miniatura 2">
+      <img src="imagens/orionVertical.png" data-bs-target="#carouselHero" data-bs-slide-to="2" class="thumbnail" alt="Miniatura 3">
     </div>
   </header>  
 
 <!-- PLANOS -->
 <section class="planos py-5 bg-light" id="seja-cliente">
     <div class="container text-left">
-      <h2 class="mb-3 text-left">Nossos Planos</h2>
+      <h2 class="mb-3 text-left">Nossos Planos | Residencial e Empresarial</h2>
       <div class="row">
   
         <!-- PLANO 600 MEGA -->
@@ -84,7 +117,7 @@
                 <img src="https://img.icons8.com/ios-filled/100/wifi.png" alt="Wi-Fi Icon" width="50">
             </div>
   
-            <h3 class="h4">600 Mega</h3>
+            <h3 class="h4">1 Giga</h3>
             <p class="text-muted">Fibra ótica de alta performance ideal para casas conectadas.</p>
   
             <!-- Benefício -->
@@ -97,12 +130,9 @@
             <div class="mb-3">
                 <small class="text-muted fw-bold">✔ Roteador Wi-Fi incluso</small>
             </div>
-  
-            <!-- Preço -->
-            <p class="display-6 text-primary fw-bold">R$ 99,90 <span class="fs-6 text-muted">/mês</span></p>
             
             <!-- Botão -->
-            <a href="https://wa.me/558587321321?text=Ol%C3%A1%2C+estou+interessado+no+plano+de+600Mb." class="btn btn-primary w-100">
+            <a href="https://wa.me/558540059000?text=Ol%C3%A1%2C+estou+interessado+no+plano+de+1Gb." class="btn btn-primary w-100" target="_blank">
               <i class="bi bi-whatsapp me-1"></i> Adquirir 
             </a>
           </div>
@@ -115,7 +145,7 @@
                 <img src="https://img.icons8.com/ios-filled/100/wifi.png" alt="Wi-Fi Icon" width="50">
             </div>
   
-            <h3 class="h4">500 Mega</h3>
+            <h3 class="h4">700 Mega</h3>
             <p class="text-muted">Velocidade estável para streaming, jogos e home office.</p>
   
             <div class="mb-0">
@@ -128,9 +158,7 @@
                 <small class="text-muted fw-bold">✔ Roteador Wi-Fi incluso</small>
             </div>
   
-            <p class="display-6 text-primary fw-bold">R$ 95,90 <span class="fs-6 text-muted">/mês</span></p>
-  
-            <a href="https://wa.me/558587321321?text=Ol%C3%A1%2C+estou+interessado+no+plano+de+500Mb." class="btn btn-primary w-100">
+            <a href="https://wa.me/558540059000?text=Ol%C3%A1%2C+estou+interessado+no+plano+de+700Mb." class="btn btn-primary w-100" target="_blank">
               <i class="bi bi-whatsapp me-1"></i> Adquirir 
             </a>
           </div>
@@ -143,7 +171,7 @@
                 <img src="https://img.icons8.com/ios-filled/100/wifi.png" alt="Wi-Fi Icon" width="50">
             </div>
   
-            <h3 class="h4">400 Mega</h3>
+            <h3 class="h4">600 Mega</h3>
             <p class="text-muted">Qualidade e economia para uso diário com estabilidade.</p>
             
             <div class="mb-0">
@@ -156,9 +184,7 @@
                 <small class="text-muted fw-bold">✔ Roteador Wi-Fi incluso</small>
             </div>
   
-            <p class="display-6 text-primary fw-bold">R$ 89,90 <span class="fs-6 text-muted">/mês</span></p>
-  
-            <a href="https://wa.me/558587321321?text=Ol%C3%A1%2C+estou+interessado+no+plano+de+400Mb." class="btn btn-primary w-100">
+            <a href="https://wa.me/558540059000?text=Ol%C3%A1%2C+estou+interessado+no+plano+de+600Mb." class="btn btn-primary w-100" target="_blank">
               <i class="bi bi-whatsapp me-1"></i> Adquirir 
             </a>
           </div>
@@ -166,7 +192,7 @@
       </div>
 
     <div class="d-flex justify-content-center mt-1">
-        <a href="https://wa.me/558587321321?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+planos." class="btn btn-primary w-50">
+        <a href="https://wa.me/558540059000?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+planos." class="btn btn-primary w-50" target="_blank">
             <i class="bi bi-whatsapp me-1"></i> Conferir outros planos
         </a>
     </div>
@@ -242,9 +268,9 @@
           <div class="card-body text-center">
             <i class="fas fa-headset fa-2x text-primary mb-3"></i>
             <h5 class="card-title">Suporte Técnico</h5>
-            <p class="card-text mb-1">+55 85 8857-0694</p>
+            <p class="card-text mb-1">+55 85 4005-9000</p>
             <p class="card-text">suporte@oriontelecom.com.br</p>
-            <span class="badge bg-success">24h via WhatsApp</span>
+            <span class="badge bg-success">Suporte 24h</span>
           </div>
         </div>
       </div>
@@ -255,7 +281,7 @@
           <div class="card-body text-center">
             <i class="fas fa-dollar-sign fa-2x text-warning mb-3"></i>
             <h5 class="card-title">Financeiro</h5>
-            <p class="card-text mb-1">+55 85 8852-6580</p>
+            <p class="card-text mb-1">+55 85 4005-9000</p>
             <p class="card-text">financeira@oriontelecom.com.br</p>
             <span class="badge bg-secondary">Horário comercial</span>
           </div>
@@ -268,7 +294,7 @@
           <div class="card-body text-center">
             <i class="fas fa-briefcase fa-2x text-warning mb-3"></i>
             <h5 class="card-title">Comercial</h5>
-            <p class="card-text mb-1">+55 85 8732-1321</p>
+            <p class="card-text mb-1">+55 85 4005-9000</p>
             <p class="card-text">comercial@oriontelecom.com.br</p>
             <span class="badge bg-secondary">Horário comercial</span>
           </div>
@@ -288,13 +314,13 @@
   </div>
 
   <div class="whatsapp-options">
-    <a href="https://wa.me/558588570694" target="_blank" title="Suporte">
+    <a href="https://wa.me/558540059000" target="_blank" title="Suporte">
       <i class="fas fa-headset"></i> Suporte
     </a>
-    <a href="https://wa.me/558588526580" target="_blank" title="Financeiro">
+    <a href="https://wa.me/558540059000" target="_blank" title="Financeiro">
       <i class="fas fa-dollar-sign"></i> Financeiro
     </a>
-    <a href="https://wa.me/558587321321" target="_blank" title="Comercial">
+    <a href="https://wa.me/558540059000" target="_blank" title="Comercial">
       <i class="fas fa-briefcase"></i> Comercial
     </a>
   </div>
@@ -303,7 +329,7 @@
 <!-- RODAPÉ -->
 <footer>
   <div class="container">
-    <p>&copy; 2025 Orion Telecom. Todos os direitos reservados.</p>
+    <p>&copy; 2026 Orion Telecom. Todos os direitos reservados.</p>
   </div>
 </footer>
 
